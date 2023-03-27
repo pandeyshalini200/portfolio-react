@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sonsie+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar{
+    background-color: grey !important;
+}
+
+.navbar-brand{
+    font-size: 1.9rem !important;
+    color: #49047a !important;
+    font-family: 'Great Vibes', cursive;
+}
+
+.navbar a {
+    font-size: 1.3rem !important;
+    text-transform: capitalize;
+}
+
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover {
+    color: #3498db !important;
+}
+
+@media (max-width: 991px){
+    .navbar{
+        font-size: 1-5rem !important;
+    }
+    .menu_active{
+        font-weight: bold;
+        border-bottom: none;
+    }
+}
+
+/* home.js */
+
+#header {
+    width: 100%;
+    height: 80vh;
+    margin-top: 20px;
+    background-color: black;
+    /* background-image: linear-gradient(
+    pink 0%,
+    pink 50%,
+    paleturquoise 50%,
+    paleturquoise 100%); */
+}
+#header h1{
+    margin: 0 0 10px 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(248, 0, 0);
+}
+
+#header .brand-name{
+    color: #ff0000;
+}
+
+#header h2{
+    color: #484848;
+    font-size: 24px;
+}
+
+.header-img{
+     text-align: right;
+}
+
+/* About.js */
+
+#header h3{
+    color: white;
+}
+
+/* responsive code */
+
+@media (max-width: 991px) {
+    #header{
+        height: 80vh;
+        text-align: center;
+    }
+
+    #header .header-img {
+        text-align: center;
+    }
+    #header  .header-img img{
+        width: 60%;
+    }
+}
+
+@media(max-width: 786px){
+    #header{
+        margin-top: 20px;
+    }
+    #header h1{
+        font-size: 28px;
+    }
+    #header h2{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    #header .header-img img {
+        width: 70%;
+    }
+}
